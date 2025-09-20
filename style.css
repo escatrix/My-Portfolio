@@ -303,7 +303,7 @@ textarea{
       margin:1%;
       display: inline-block;
       padding: 10px 20px;
-      background: #ffcc70;
+      background: #ff2a6d;
       color: black;
       border-radius: 25px;
       text-decoration: none;
@@ -313,7 +313,8 @@ textarea{
     }
 
     .btn:hover {
-      background: #ffdca8;
+      background: #ff0e26;
+      transform:scale(1.05);
     }
 
     footer {
