@@ -261,6 +261,9 @@
     width: 150px;
     height: 150px;
   }
+  nav h2{
+    font-size:100%;
+  }
 }
 form{
   display:flex;
