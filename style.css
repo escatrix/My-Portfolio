@@ -330,4 +330,18 @@ textarea{
       font-size: 0.9rem;
     }
 
+
+
    
+html {
+  scroll-behavior: smooth;
+}
+
+.toani{
+  opacity:0;
+  transition: 1.5s ease;
+
+}
+.toani.show{
+  opacity:1;
+}
