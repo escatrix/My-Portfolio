@@ -118,9 +118,9 @@
     }
     #projects{
       font-size:100%;
-      width: 80%; 
-      margin: 0 auto; 
-      text-align: center;
+      width: 100%; 
+      
+      
       
       
       
@@ -190,12 +190,13 @@
   display: flex;
   flex-wrap: wrap;        
   justify-content: center; 
-  align-items: center;     
+  align-items: center; 
+  gap:10%;   
   
 }
 .procc img{
  
-  width:500px;
+  width:100%;
   height:auto;
   
  
@@ -206,7 +207,7 @@
   transform:scale(1.05);
 }
 .procc{
-   width: 500px;
+   
    overflow: hidden;
    box-shadow: 0 0 10px #ff2a6d;
    border-radius:18px;
@@ -254,6 +255,7 @@
       
       padding:2%;
   }
+  
 }
 
 @media (max-width: 480px) {
