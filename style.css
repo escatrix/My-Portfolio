@@ -345,3 +345,38 @@ html {
 .toani.show{
   opacity:1;
 }
+#links {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#links h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.linksc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.linkcard {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ 
+}
+
+.linkcard:hover {
+  background: #ff0e26;
+
+  
+}
