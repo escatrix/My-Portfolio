@@ -5,7 +5,7 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
       background: #1a1a1a;
       color: #ffffff;
     
@@ -30,7 +30,7 @@
       padding:1.3vw;
       position:fixed;
       background: #1a1a1a;
-      backdrop-filter: blur(12px);
+      
       display:flex;
       align-items:center;
       justify-content:center;
@@ -220,6 +220,10 @@
   .chota {
     width: 200px;
     height: 200px;
+
+  }
+  #home img{
+    margin-top:5%;
   }
   nav {
     
