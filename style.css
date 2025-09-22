@@ -11,10 +11,7 @@
     
       
     }
-    nav img{
-      overflow:hidden;
-    
-    }
+   
     nav h2{
 
       font-size:180%; 
@@ -103,7 +100,7 @@
 
     }
     #home p{
-        font-size:70%;
+        font-size:50%;
     }
     .intro{
       padding-right:10%;
@@ -260,18 +257,13 @@
     height:80%;
 
   }
-  #skills h2{
-      font-size:500%;
+  h2{
+      font-size:400%;
       margin:0 auto;
       
       padding:2%;
     }
-  #experience h2{
-    font-size:500%;
-      margin:0 auto;
-      
-      padding:2%;
-  }
+  
   
 }
 
@@ -323,9 +315,7 @@ textarea:hover{
    box-shadow: 0 0 10px #ff2a6d;
 
 }
-textarea::placeholder{
-   
-}
+
     
 
     
