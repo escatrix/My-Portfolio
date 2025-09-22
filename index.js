@@ -1,5 +1,6 @@
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault();
+ 
   
   
   emailjs.sendForm('service_vmk2xnm', 'template_taotdtt', this)
@@ -8,6 +9,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     }, function(error) {
       alert('❌ Failed to send email: ' + JSON.stringify(error));
     });
+   this.reset();
+
 });
 
 const observer = new IntersectionObserver((entries)=>{
