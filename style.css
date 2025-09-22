@@ -91,7 +91,7 @@
   animation-name: zoom;
   transition: 0.5s ease;
        
-        font-size:6vh;
+        font-size:200%;
         margin-bottom: 1rem;
       
       max-width: 100%;
@@ -99,9 +99,7 @@
       text-align: center;
 
     }
-    #home p{
-        font-size:50%;
-    }
+    
     .intro{
       padding-right:10%;
     }
@@ -126,8 +124,12 @@
     #about{
       
       font-size:200%;
+      display:flex;
+      flex-direction:column;
+      margin-left:200px;
 
     }
+    
     #about  h2{
       font-size:200%;
       margin-left:3%;
@@ -227,6 +229,15 @@
 }
 
 @media (max-width: 768px) {
+   #about{
+      
+      font-size:200%;
+      display:flex;
+      flex-direction:column;
+      margin-left:20px;
+
+    }
+    
   .chota {
     width: 200px;
     height: 200px;
@@ -234,6 +245,8 @@
   }
   #home img{
     margin-top:5%;
+    width:100%;
+
   }
   nav {
     
@@ -271,6 +284,11 @@
   .chota {
     width: 150px;
     height: 150px;
+  }
+   #home img{
+    margin-top:5%;
+    width:100%;
+    
   }
   nav h2{
     font-size:100%;
