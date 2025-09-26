@@ -175,15 +175,9 @@ transition: ease 0.7s;
     
   
     #skills h2{
-      font-size:350%;
-      width: 14%; 
- 
- 
-      
-      margin: 0 auto; 
-      text-align: center;
-      
-      padding:2%;
+      font-size:200%;
+      display:flex;
+      justify-content:center;
     }
     #projects{
       font-size:100%;
