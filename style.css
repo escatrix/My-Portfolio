@@ -455,7 +455,7 @@
  }
 
  .btn {
-   width: 60%;
+   width: 20%;
    display: inline-block;
    padding: 20px;
    font-size: 120%;
@@ -476,9 +476,10 @@
 
  footer {
    text-align: center;
-   padding: 1rem;
+   padding: 2rem;
    background: rgba(255, 255, 255, 0.05);
-   font-size: 0.9rem;
+   font-size: 1.5rem;
+   
  }
 
 
