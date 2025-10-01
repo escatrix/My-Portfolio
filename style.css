@@ -268,9 +268,10 @@
    margin: 10%;
  }
  .bada:hover {
-   transform: scale(1.05);
+   transform: translateY(-30px) translate(40px) scale(1.05);
    transition: ease .7s;
  }
+ 
 
  .heading {
    margin-top: 1%;
@@ -301,7 +302,7 @@
  }
 
  .chota:hover {
-   transform: scale(1.05);
+   transform: translateY(-30px)scale(1.05);
    transition: ease 0.6s;
  }
  @media (max-width: 768px) {
@@ -584,6 +585,7 @@
   border-radius: 15px;
   overflow: hidden;
   text-align: center;
+  transition: transform 0.6s;
   
 
 }
@@ -630,4 +632,19 @@
   display: flex;
   flex-wrap: wrap;
 
+}
+.bchota{
+  margin:1%;
+  display: flex;
+  align-items: center;
+  border-radius: 42px;
+  justify-content: center;
+}
+.bchota img{
+  width:10vw;
+  height:10vh;
+}
+.bchota:hover {
+  transform: translateY(-30px)scale(1.05);
+  transition: ease 0.6s;
 }
