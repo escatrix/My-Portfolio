@@ -28,7 +28,7 @@ toaniElements.forEach(el=> observer.observe(el))
 
 var typed = new Typed("#typing", {
   strings: ["Aspiring Web Developer" ,"JavaScript Enthusiast", "Problem Solver" ],
-  typeSpeed: 100,
+  typeSpeed: 80,
   backSpeed: 60,
   loop: true
 });
@@ -40,7 +40,7 @@ const body = document.body;
 
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark-theme");
-  toggleBtn.textContent = "☀️";
+  toggleBtn.textContent = "Light Mode";
 }
 
 toggleBtn.addEventListener("click", () => {
@@ -49,9 +49,9 @@ toggleBtn.addEventListener("click", () => {
   
   if (body.classList.contains("dark-theme")) {
     localStorage.setItem("theme", "dark");
-    toggleBtn.textContent = "☀️";
+    toggleBtn.textContent = "Light Mode";
   } else {
     localStorage.setItem("theme", "light");
-    toggleBtn.textContent = "🌙";
+    toggleBtn.textContent = "Dark Mode";
   }
 });

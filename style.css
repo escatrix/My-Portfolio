@@ -1,15 +1,15 @@
  :root {
   --bg-color: #ffffff;
   --text-color: #000000;
-  --accent-color: #007bff;
+  --accent-color: #00BFFF;
 }
 
 .dark-theme {
-  --bg-color: #121212;
+  --bg-color: #1E1E2F;
   --text-color: #ffffff;
   --accent-color: #00bcd4;
 }
- 
+
  
  
  
@@ -17,20 +17,23 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   
 
  }
  body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  
 }
 
 
  nav {
    width: 100%;
-   height: 10%;
+   height: 7%;
    padding: 1.3vw;
    position: fixed;
    z-index: 1;
+   overflow:hidden;
   
 
    display: flex;
@@ -38,7 +41,7 @@
    justify-content: center;
    backdrop-filter: blur(10px);
    
-   background-color:rgba(67, 97, 238, 0.6)
+   background-color:rgba(0, 191, 255, 1)
 ;
 
  }
@@ -50,59 +53,67 @@
     color: var(--text-color);
    font-size: 150%;
    font-weight: bold;
-   padding: 2.5%;
+   padding: 10px;
+  
 
 
 
 
  }
-
+ #theme-toggle {
+   margin-left: 20px;
+   padding: 10px 15px;
+   font-size: 1rem;
+   
+   border-radius: 8px;
+   
+   background-color: var(--accent-color);
+   color: var(--bg-color);
+   transition: background-color 0.3s, color 0.3s;
+  
+ }
  .about {
    display: flex;
    border-radius: 20px;
    width: 90%;
    margin: 5%;
+   gap:10%;
    justify-content: center;
    align-items: center;
+   
   }
 
  .labout {
-   background-color: #2C3E50;
+   background: linear-gradient(135deg, #ffffff 0%, #578fb6 40%, #308bd5 100%);
    color: #ECF0F1;
    display: flex;
    flex-direction: column;
    font-size: 2vw;
-   width: 40%;
+   width: 20%;
    align-items: center;
    justify-content: center;
-   border: 2px solid rgb(255, 255, 255);
+   border: 2px solid var(--text-color);
    border-radius: 20px;
    height: 50vh;
  }
 
- .labout:hover {
-   width: 90%;
-   transition: ease .7s;
- }
 
  .babout {
    display: flex;
-   background-color: rgb(26, 23, 72);
+   background: linear-gradient(135deg, #ffffff 0%, #578fb6 40%, #308bd5 100%);
    border-radius: 20px;
    color: #ECF0F1;
-   font-size: 1.5vw;
+   font-size: 1.7vw;
    align-items: center;
-   border: 2px solid white;
+   border: 2px solid var(--text-color);
    justify-content: center;
-   padding: 0% 10%;
+   padding: 5%;
    width: 60%;
    height: 50vh;
+  word-spacing: 10px;
  }
 
- .babout:hover {
-   width: 100%;
-   transition: ease 0.7s;
- }
+ 
 
  @keyframes zoom {
    0% {
@@ -115,15 +126,16 @@
  }
 
  nav a:hover {
-   border-bottom: 2px solid #ff1414;
-   color: #ff1414;
+   border-bottom: 2px solid #2F4F4F;
+   color: #2F4F4F;
    border-radius: 50%;
+  
    transition: 0.3s;
  }
 
  #home img {
-   width: 400px;
-   height: 600px;
+   width: 20%;
+   height: 30%;;
    margin-left: 10%;
    border-radius: 20px;
  }
@@ -154,18 +166,20 @@
  .intro p {
    
    margin-top: 2%;
-   color: #ff2a6d;
+   color: #00BFFF;
    font-weight: bold;
  }
 
  .skills {
    display: flex;
-   border-radius: 20px;
-   background-color: #2C3E50;
-   border: 2px solid white;
+  border-radius: 20px;
+  border: 2px solid var(--text-color);
+  padding: 2%;
+  margin: 3% auto;
+  width: 80%;
+   border: 2px solid var(--text-color);
+   background: linear-gradient(135deg, #ffffff 0%, #578fb6 40%, #308bd5 100%);
 
-   margin: 3% 2%;
-   padding: 2%;
  }
 
  #projects {
@@ -181,16 +195,6 @@
   margin-left: 5%;
 }
 
-.edu::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: var(--text-color);
-  border-radius: 10px;
-}
 
 .headi {
   font-size: 3rem;
@@ -198,6 +202,7 @@
   text-align: center;
   font-weight: bold;
   color: var(--text-color);
+  margin: 10vh 0vh;
 }
 
 .exp {
@@ -205,16 +210,18 @@
   border: 2px solid var(--text-color);
   padding: 2%;
   margin: 3% auto;
-  max-width: 900px;
-  background: var(--bg-color);
+ 
+  width: 80%;
+  background: linear-gradient(135deg,  #B0C4DE 0%, #4F6F6F 50%,  #2F4F4F 100%);
  
 }
 
 .card {
   position: relative;
-  margin-left: 40px;
+  margin: 20px 40px;
   padding: 15px 20px;
-  width: 80%;
+  width:30vw;
+  overflow-wrap: break-word;
   background: var(--bg-color);
   border: 2px solid var(--text-color);
   border-radius: 12px;
@@ -225,9 +232,9 @@
 
 
 .card:hover {
-  transform: translateX(50px) scale(1.03);
-  border-color: blue;
-  color: blue;
+  transform: translateY(-20px) scale(1.10);
+  border-color: #39FF14;
+  color: #39FF14;
   
 }
 
@@ -286,8 +293,8 @@
 
 
  .chota img {
-   width: 100px;
-   height: 100px;
+   width: 5vw;
+   height: 5vw;
    padding: 10%;
    border-radius: 12px;
  }
@@ -301,13 +308,19 @@
      font-size: 150%;
    }
 
+
    #about {
      font-size: 150%;
      display: flex;
      flex-direction: column;
      margin-left: 20px;
    }
-
+   .card{
+     font-size: 2.5vw;
+    width: 60%;
+     margin: 3% auto;
+   }
+   
    nav a {
      font-size: 80%;
    }
@@ -316,17 +329,15 @@
      flex-direction: column;
      
    }
+   .labout{
+    margin-bottom:5%;
+   }
 
    .bada {
      width: 80%;
      height: 30vh;
    }
 
-   #home img {
-     margin-top: 5%;
-     width: 100%;
-
-   }
 
    nav {
 
@@ -348,8 +359,8 @@
    }
 
    #home img {
-     margin-left: 0%;
-     width: 100%;
+     margin:10% 10%;
+     width: 50%;
      height: 80%;
 
    }
@@ -357,6 +368,10 @@
    .about {
      flex-direction: column;
 
+   }
+   .chota img{
+    width:20vw;
+    height:10vh;
    }
 
    .labout {
@@ -391,10 +406,13 @@
      flex-direction: column;
    }
 
-   .card {
+   .card{
      font-size: 2.5vw;
+    width: 60%;
+     margin: 3% auto;
 
    }
+   
 
    img {
      width: 100%;
@@ -413,6 +431,9 @@
    nav h2 {
      font-size: 100%;
    }
+   .btn{
+   overflow:hidden;
+   }
  }
 
  form {
@@ -423,7 +444,8 @@
  }
 
  #contact-form {
-   gap: 10px;
+   gap: 30px;
+   margin-bottom:20vh;
  }
 
  input {
@@ -436,7 +458,7 @@
  }
 
  input:hover {
-   box-shadow: 0 0 10px #ff2a6d;
+   box-shadow: 0 0 10px #39FF14;
  }
 
  textarea {
@@ -451,32 +473,37 @@
  }
 
  textarea:hover {
-   box-shadow: 0 0 10px #ff2a6d;
+   box-shadow: 0 0 10px #39FF14;
  }
 
  .btn {
-   width: 20%;
-   display: inline-block;
+   width: 20vw;
+   display:flex;
    padding: 20px;
-   font-size: 120%;
-   background: #ff2a6d;
-   color: black;
+   font-size: 1.1rem;
+   background: #00BFFF;
+   color: rgb(255, 255, 255);
    border-radius: 12px;
-   text-decoration: none;
-   font-weight: bold;
+   overflow-wrap: break-word;
+   justify-content:center;
+   
    transition: 0.3s;
 
+   text-align: center;
+   
+   
  }
 
  .btn:hover {
-   background: #ff0e26;
-   box-shadow: 0 0 10px #ff2a6d;
+   background: #2F4F4F;
+   box-shadow: 0 0 10px #2F4F4F;
    transform: scale(1.05);
  }
 
  footer {
    text-align: center;
-   padding: 2rem;
+   height: 30vh;
+   padding: 1rem;
    background: rgba(255, 255, 255, 0.05);
    font-size: 1.5rem;
    
@@ -517,7 +544,7 @@
  }
 
  .linkcard {
-   background: #1a1a1a;
+   background: #00BFFF;
    color: #fff;
    padding: 15px 25px;
    border-radius: 12px;
@@ -530,7 +557,7 @@
  }
 
  .linkcard:hover {
-   background: #ff0e26;
+   background: #2F4F4F;
  }
 
   .procj {
@@ -589,4 +616,9 @@
 
 .buttons button:hover {
   opacity: 0.8;
+}
+.change{
+  display: flex;
+  flex-wrap: wrap;
+
 }
