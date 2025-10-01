@@ -418,7 +418,7 @@
    }
 
    #home img {
-     margin-top: 15%;
+     margin-top: 20%;
      width: 50%;
    }
 
@@ -426,11 +426,16 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: auto auto;         
-    gap: 0.5rem;
+    margin: 0;
+    padding-bottom:100px;
     text-align: center;
-    height:11%;
-    font-size: 140%;
     
+    font-size: 150%;
+    
+   }
+   .nav button{
+    grid-column: 4 / 5; 
+    grid-row: 1 / 2;
    }
    .btn{
    overflow:hidden;
